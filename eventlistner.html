@@ -1,0 +1,27 @@
+<button id="btn">Click Me</button>
+<script>
+  let btn1 = document.querySelector("#btn");
+
+  btn.addEventListener("click", () => {
+   alert("Button clicked!");
+  });
+</script>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div class="box"> hey hello </div>
+</body>
+<script>
+  alert("This is an alert!");   // Popup shown to user
+  console.log("This is a log!"); // Message printed in browser console
+  document.body.addEventListener("click", () => {
+  console.log("Fires only once!");
+}, { passive: true });
+
+</script>
+</html>
